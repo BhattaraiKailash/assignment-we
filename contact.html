@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -9,7 +10,7 @@
 		<!-- favicon for the website -->
 		<link rel="icon" type="text/css" href="image/myLogo.png">
 		<!-- connect to the stylesheet styleContact -->
-		<link rel="stylesheet" type="text/css" href="css/styleBio.css">
+		<link rel="stylesheet" type="text/css" href="css/styleContact.css">
 		<title>Portfolio</title>
 	</head>
 	<body>
@@ -44,15 +45,52 @@
 			</div>
 		</header>
 		<section>
-			<h3>Bio</h3>
-			<!-- Some of the details about me. -->
-			<p>
-				I am Kailash Bhattarai.I was born in 21st April 1998 as a first children to my parents,in Tanahun district of Gandaki zone.I went to Adarsha english boarding school of Tanahun district.I studied in Adarsha English Boarding School from my playgroup to my sixth grade. As a kid i was introvert.I didn't have many friends and i wasn't interested in outdoor game.but rather i used to play video games a lot. I started playing chess in my 6th grade and i was hooked into the game. Then i came to Kathamndu for further studies. I was admitted to Panga Secondary Boarding School of Panga, Kirtipur for my grade 7. The environment was new for me and i was scared at first. But slowly i was adapted to the environment. Teacher's were qualified and experienced. During my time in Panga secondary boarding School i developed my interest in music and in computers. I was influenced by many great musical artists like The Beatles, Led Zeppelin, Elvis Presley, The doors, Pink Floyd, Queen and many more. I got my S.L.C(School leaving Certificate) as i passed my grade 10 for Panga secondary boarding school. During my vacation after passing my S.L.C i went to Valley institute,Kiritipur for a course called Hardware and Networking. I comleted the course. And for my furthur studies i joined Kathmandu Model College for my grade 11 as a Biology student.I was my 11 and 12 from there. Then i joined IT training Nepal for a course on Java Programming. After my completed my training i was hooked into programming and i decided to choose my career path in Information Technology(IT). I came to know about a college, NAMI which was in partnership with University of Northampton(UN), UK. I found the environment pleasing for my education so i enrolled for B.S.C(hons) Computing. I am currently studying in Nami as a first year student and i am having a lots of fun.
-			</p>
+			<h3>Contact me</h3>
+			<!-- To wrap the section part -->
+			<div class="section-wrapper">
+			<!-- Sets the class to left -->
+				<div class="left">
+					<fieldset>
+						<legend><p>Contact me</p></legend>
+						<label>First Name:</label>
+						<!-- Sets the text field for first name-->
+						<input type="text" name="firstName" placeholder="first name"><br><br>
+						<label>Middle Name:</label>
+						<!-- Set the text field for middle name. -->
+						<input type="text" name="middleName" placeholder="middle name"><br><br>
+						<label>Gender:</label>
+						<!-- Sets the radiobutton of gender. -->
+						<input type="radio" name="gender" value="male">Male
+						<input type="radio" name="gender" value="male">Female<br><br>
+						<label>Phone No:</label>
+						<input type="text" name="phoneNo" placeholder="phone no."><br><br>
+						<label>Country:</label>
+						<input type="text" name="country" placeholder="country"><br><br>
+						<label>Contact Purpose:</label>
+						<!-- To select the appropriate option. -->
+						<select>
+							<option>Business</option>
+							<option>Personal</option>
+						</select><br><br>
+						<label>Birth Date:</label>
+						<input type="date" name="birthDate"><br><br>
+					</fieldset>
+				</div>
+				<!-- For the right class -->
+				<div class="right">
+					<fieldset>
+						<legend><p>Message</p></legend>
+						<p>Write your message.</p>
+						<!-- Text area to write the appropriate text. -->
+						<textarea name="Contact purpose" rows="15" cols="60"></textarea><br>
+						<!-- In order to submit the form. -->
+						<input type="submit" class="submit" name="Submit" value="Submit">
+
+					</fieldset>
+				</div>
+			</div>
 		</section>
-		<!-- To clear the line. -->
 		<div class="makeplain"></div>
-		
 		<footer>
 		<div id="footer-wrapper">
 			<div class="connectPage">
