@@ -1,0 +1,227 @@
+body{
+	font-family: sans-serif;
+	margin: 0 auto; /*Sets the contents in center horizontally.*/
+	max-width: 1300px;/*Sets the maximum width of each element of body to 1300px*/
+	padding-top: 20px;
+	background-color: #f1f6f8;/*Code to set the background colour.*/
+	padding: 10px 10px 10px 10px;
+}
+p{/*Styling element for paragraph.*/
+	font-family: sans-serif;/*Sets the font family*/
+	font-size: 100%;
+	line-height: 120%
+	padding:3%;
+	text-align: justify;/*The text is justified of paragraph.*/
+}
+h1, h2, h3, h4, h5, h6{/*Styling for all of the header*/
+	text-align: center;
+	font-size: 180%;
+	line-height: 130%;
+	font-weight: 500;/*Sets the font weight to bold*/
+	color:gold;
+}
+/*Styling for the link*/
+a{	
+	color: #181818;
+	font-size: 150%;
+	text-decoration: none;
+	font-weight: 500;
+}
+/*When the link is hovered*/
+a:hover{
+	color: #a7c6eb;
+	text-shadow: 4px 4px 6px black;/*gives the text its text shadow*/
+}
+/*Sets the porporties for all the image*/
+img{
+	display:block;/*display the image as a block*/
+	margin: 0 auto;/*Sets every image to center*/
+	max-width: 100%;
+	height:auto;
+	width: auto;
+	margin-bottom: -3px;
+}
+/*Code for the header tag*/
+header{
+	margin: 0px 20px 20px 20px;/*Sets the margin of the header*/
+	position: fixed;/*sets the position of header to fixed*/
+	width: 100%;
+	height: 100px;
+	top: 0;
+	left: 0;  
+	background-color: #ffffff;
+	box-shadow: 10px 10px 10px #f9f9f9;
+}
+/*The wrapper for the image in header*/
+#header-wrapper img{
+	display: block;
+	margin-left: 20px;
+	margin-bottom:10px; 
+	width: 80px;
+	height: 80px;
+	border-radius:50%;/*sets the radius of the header*/
+	float: left; /*sets the image to te left*/
+}
+
+	
+/*Styling for the navigation bar*/
+nav{
+	width:100%
+	height: auto;
+	display: flex;
+	flex-direction: row;/*Set the direction of the items in nav to row.*/
+	margin-left: 800px;/*the contents are moved 800px to the left.*/
+}
+/*navigation items of the navigation bar*/
+.menuitem{
+	width: 0 auto;
+	height: auto;
+	padding-left: 45px;
+	padding-top: 50px;
+	text-shadow: 2px 2px 6px black;
+	background: #ffffff;
+	transition: font-size 2s, color 2s; /*CSS3 properties to transit the elements font size and color in 2s.*/
+}
+/*When menu items is being hovered*/
+.menuitem:hover{
+	font-size: 170%;/*When font is hovered its size increases to 170%*/
+	color: #a7c6eb;
+}
+/*Sets the section margin to 100px from top.*/
+section{
+	margin-top: 100px;
+	font-size: 1.3em;
+	margin-bottom: 50px;
+}
+
+
+/*for the footer of the page*/
+footer{
+	background-color: #ffffff;
+	margin-bottom:0;
+}
+/*for the contact bar of the page*/
+.contactBar{
+	max-width:100%;
+	/*Sets the flex of the contact bar*/
+	display: flex;
+	flex-direction: row;
+}
+/*Sets the item of the contact.*/
+.contactItem{
+	margin:20px 20px 20px 100px; 
+	background-color:#a7c6eb;
+	border-radius: 50%;
+	text-align: center;
+	float: left;
+	padding: 20px 20px 20px 20px;/*Sets the padding of the items*/
+}
+/*For the  link to contact item*/
+.contactItem a i{
+	font-size: 200%;
+	color: #ffffff;
+	transition: font-size 2s;
+}
+/*For the link of contact item when it is hovered.*/
+.contactItem a i:hover{
+	font-size: 300%;
+	}
+	/*For the second footer item*/
+.second{
+	max-width:1300px;
+	padding-left: 500px;
+	font-size: 200%;
+	height: 50px;
+	background-color:#a7c6eb;
+}
+
+/*Makes the text plain.*/
+.makeplain{
+	clear: both;
+	padding: 2%;	
+}
+/*To make the website responsive*/
+@media screen and (max-width: 600px){
+	/*Body has a padding of 250px from top*/
+	body{
+		padding-top: 250px;
+	}
+	/*Font-size of paragraph for responsiveness*/
+	p{
+		font-size: 110%
+	}
+	/*Font size is decreased for headers*/
+	h1,h2,h3,h4,h5,h6{
+		font-size: 150%
+	}
+	/*font size is decreased for links*/
+	a{	
+	font-size: 120%;
+}
+/*Header is arranged according to the size*/
+header{
+	width: auto;
+	height: auto;
+}
+/*Width, height and margin of header is decreased.*/
+#header-wrapper img{
+	margin-left: 4px;
+	margin-bottom:2px; 
+	width: 50px;
+	height: 50px;
+}
+/*Flex direction is set to column in nav div*/
+nav{
+	width:auto;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	margin-left: 80px;
+	
+}
+/*Menu item covers total of the width*/
+.menuitem{
+	width: 100%;
+	height: auto;
+	
+}
+
+/*Font size is increased only 130% when it is hovered*/
+.menuitem:hover{
+	font-size: 130%;
+}
+
+/*For the contactBar class the flex direction is set to column*/
+.contactBar{
+	align-content: center;
+	width:auto;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+/*the contactItem class has its width of 100%*/
+.contactItem{
+	width: 100%
+	padding: 10px 10px 10px 10px;
+}
+/*for the link in contant Item font size*/
+.contactItem a i{
+	font-size: 150%;
+
+}
+/*When font awesome link in contactItem class is hovered.*/
+.contactItem a i:hover{
+	font-size: 200%;
+	}
+	/*For the second element in footer.*/
+.second{
+	font-size: 150%;
+	padding-left: 10px;
+	margin: 0 auto;
+	width: auto;
+}
+ /*Section has a margin of 80px from top and has font-size of 0.8em.*/
+section{
+	margin-top: 80px;
+	font-size: 0.8em;
+}

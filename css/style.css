@@ -1,0 +1,413 @@
+body{
+	font-family: sans-serif;
+	margin: 0 auto; /*Sets the contents in center horizontally.*/
+	max-width: 1300px;/*Sets the maximum width of each element of body to 1300px*/
+	padding-top: 20px;
+	background-color: #f1f6f8;/*Code to set the background colour.*/
+	padding: 10px 10px 10px 10px;
+}
+p{/*Styling element for paragraph.*/
+	font-family: sans-serif;/*Sets the font family*/
+	font-size: 120%;
+	line-height: 120%
+	padding:3%;
+	text-align: justify;/*The text is justified of paragraph.*/
+}
+h1, h2, h3, h4, h5, h6{/*Styling for all of the header*/
+	text-align: center;
+	font-size: 180%;
+	line-height: 130%;
+	font-weight: 500;/*Sets the font weight to bold*/
+	color:gold;
+}
+/*Styling for the link*/
+a{	
+	color: #181818;
+	font-size: 150%;
+	text-decoration: none;
+	font-weight: 500;
+}
+/*When the link is hovered*/
+a:hover{
+	color: #a7c6eb;
+	text-shadow: 4px 4px 6px black;/*gives the text its text shadow*/
+}
+/*Sets the porporties for all the image*/
+img{
+	display:block;/*display the image as a block*/
+	margin: 0 auto;/*Sets every image to center*/
+	max-width: 100%;
+	height:auto;
+	width: auto;
+	margin-bottom: -3px;
+}
+/*Code for the header tag*/
+header{
+	margin: 0px 20px 20px 20px;/*Sets the margin of the header*/
+	position: fixed;/*sets the position of header to fixed*/
+	width: 100%;
+	height: 100px;
+	top: 0;
+	left: 0;  
+	background-color: #ffffff;
+	box-shadow: 10px 10px 10px #f9f9f9;
+}
+/*The wrapper for the image in header*/
+#header-wrapper img{
+	display: block;
+	margin-left: 20px;
+	margin-bottom:10px; 
+	width: 80px;
+	height: 80px;
+	border-radius:50%;/*sets the radius of the header*/
+	float: left; /*sets the image to te left*/
+}
+
+	
+/*Styling for the navigation bar*/
+nav{
+	width:100%
+	height: auto;
+	display: flex;
+	flex-direction: row;/*Set the direction of the items in nav to row.*/
+	margin-left: 800px;/*the contents are moved 800px to the left.*/
+}
+/*navigation items of the navigation bar*/
+.menuitem{
+	width: 0 auto;
+	height: auto;
+	padding-left: 45px;
+	padding-top: 50px;
+	text-shadow: 2px 2px 6px black;
+	background: #ffffff;
+	transition: font-size 2s, color 2s; /*CSS3 properties to transit the elements font size and color in 2s.*/
+}
+/*When menu items is being hovered*/
+.menuitem:hover{
+	font-size: 170%;/*When font is hovered its size increases to 170%*/
+	color: #a7c6eb;
+}
+/*Section is placed 100px below from top*/
+section{
+	margin-top: 100px;
+}
+/*The styling for the main image of the site*/
+.mainImage{
+	display: block;/*image is displayed as a block.*/
+	width: 100%;
+	height: 400px;
+	animation-name:changeImage; /*name of the animation*/
+	animation-duration:15s;/*animation last for about 15s.*/
+	animation-iteration-count: infinite;/*animation is always being executed.*/
+}
+/*Changes the images in certain fraction of time.*/
+@keyframes changeImage{
+	0%{background: url(../image/kailash1.jpg) no-repeat center;}/*at 0% the imageof the mainImage*/
+	33%{background: url(../image/kailashBhattarai4.jpg) no-repeat center;}/*at 33% the imageof the mainImage*/
+	66%{background: url(../image/kailashBhattarai.jpg) no-repeat center;}/*at 66% the imageof the mainImage*/
+	100%{background: url(../image/kailash1.jpg) no-repeat center;}/*at 100% the imageof the mainImage*/
+}
+/*Gives the inttoduction to the page*/
+.pageIntro{
+	margin: 10px 10px 10px 10px;/*Sets the margin of the page*/
+	background-color:#a7c6eb;/*Sets the background of the image*/
+	text-align: center;/*align the text to the center*/
+	text-align: justify;/*text is justified*/
+	width: 60%;/*sets the width to 60%*/
+	float: left;/*sets the alignment of the image to left*/
+	height: 380px;/*Sets the height of the div*/
+	padding: 1%;
+	padding-top:30px;
+	margin: 0 auto;/*sets the div to center automatically.*/
+	border: 2px solid #ffffff;/*Gives the border of the of the page*/
+	border-radius: 20px;/*Sets the radius of the border to 20px*/
+}
+/*Sets paragraph property*/
+.pageIntro p{
+	padding-top: 50px;
+	padding-right: 30px;
+	padding-left:30px;
+
+}
+/*image on the right of page intro.*/
+.myimage{
+	display: block;
+	border-radius: 50%;
+	float: right;
+	margin: 0 auto;/*sets the div to the center*/
+	width: 32%;/*sets the width of the image*/
+	padding: 1%;
+	height: auto;
+
+}
+/*image of the myI*/
+.myimage img{
+	align-content: center;
+	margin-top: 50px;
+	display: block;
+	border-radius: 50%;/*sets the image as a circle*/
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	transition: width 2s, height 2s, transform 2s;/*For the transition of the image*/
+	box-shadow: 3px 3px 6px black;/*sets the box shadow of the image*/
+
+}/*When image on my image is hovered.*/
+.myimage img:hover{
+	width: 100%;
+	height: auto;
+	transform: rotate3d(1,1,1,360deg);/*rotates the image in 3d i.e. on x, y and z axis.*/
+}
+
+.makeplain{
+	clear: both;/*Clears the row*/
+	padding: 2%;/*Gives the padding of 2%.*/	
+}
+/*For the div column*/
+.column{
+	margin:10px 10px 10px 10px;/*Gives the margin of the page*/ 
+	width: 0 auto;
+	height: auto;
+	display: flex;
+	flex-direction: row;/*sets the flex to direction of row.*/
+	border: 2px solid #ffffff;/*Gives the border and sets its colour.*/
+	border-radius: 20px;/*Sets the radius of the border*/
+
+}
+/*For the left column of the page*/
+.leftColumn{
+	float: left;
+	width: 49%;/*Sets the width to 49%*/
+	height: auto;
+}
+/*Styling for the id row*/
+#Row{
+	/*for the margin of the column*/
+	margin: 10px 10px 10px 120px;
+	height: 20px;
+	width: 450px;
+	/*Sets the direction of the flex to row*/
+	display: flex;
+	flex-direction: row;
+}
+/*for the styling of class question*/
+.question{
+	padding-left: 20px;
+	width: 150px;
+	height: 20px;
+	/*Using the transition of background and changing in 1s*/
+	transition: background-color 1s;
+	/*For giving the transition to linear*/
+	transition-timing-function: linear;
+}
+/*for the div class of the answer*/
+.answer{
+	padding-left: 20px;
+	margin-left: 10px;
+	height: 20px;
+	width: 150px;
+	/*Transiting th background color in 1s*/
+	transition: background-color 1s;
+	transition-timing-function: linear;
+}
+/*for the right column of the page*/
+.rightColumn{
+	float: right;
+	width: 49%;
+	height: auto;
+}
+/*for the footer of the page*/
+footer{
+	background-color: #ffffff;
+	margin-bottom:0;
+}
+/*for the contact bar of the page*/
+.contactBar{
+	max-width:100%;
+	/*Sets the flex of the contact bar*/
+	display: flex;
+	flex-direction: row;
+}
+/*Sets the item of the contact.*/
+.contactItem{
+	margin:20px 20px 20px 100px; 
+	background-color:#a7c6eb;
+	border-radius: 50%;
+	text-align: center;
+	float: left;
+	padding: 20px 20px 20px 20px;/*Sets the padding of the items*/
+}
+/*For the  link to contact item*/
+.contactItem a i{
+	font-size: 200%;
+	color: #ffffff;
+	transition: font-size 2s;
+}
+/*For the link of contact item when it is hovered.*/
+.contactItem a i:hover{
+	font-size: 300%;
+	}
+	/*For the second footer item*/
+.second{
+	max-width:1300px;
+	padding-left: 500px;
+	font-size: 200%;
+	height: 50px;
+	background-color:#a7c6eb;
+}
+/*question when it is hovered*/
+.question:hover{
+	background-color: #a7c6eb;
+	cursor: pointer;/*for the cursor to be pointed.*/
+
+}
+/*when answer is hovered.*/
+.answer:hover{
+	background-color: #a7c6eb;
+	cursor: pointer;
+}
+/*To make the website responsive*/
+@media screen and (max-width: 600px){
+	/*Body has a padding of 250px from top*/
+	body{
+		padding-top: 250px;
+	}
+	/*Font-size of paragraph for responsiveness*/
+	p{
+		font-size: 110%
+	}
+	/*Font size is decreased for headers*/
+	h1,h2,h3,h4,h5,h6{
+		font-size: 110%
+	}
+	/*font size is decreased for links*/
+	a{	
+	font-size: 120%;
+}
+/*Header is arranged according to the size*/
+header{
+	width: auto;
+	height: auto;
+}
+/*Width, height and margin of header is decreased.*/
+#header-wrapper img{
+	margin-left: 4px;
+	margin-bottom:2px; 
+	width: 50px;
+	height: 50px;
+}
+/*Flex direction is set to column in nav div*/
+nav{
+	width:auto;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	margin-left: 80px;
+	
+}
+/*Menu item covers total of the width*/
+.menuitem{
+	width: 100%;
+	height: auto;
+	
+}
+/*Font size is increased only 130% when it is hovered*/
+.menuitem:hover{
+	font-size: 130%;
+}
+/*section starts at 50px margin from top*/
+section{
+	margin-top: 50px;
+}
+/*Width of mainImage class is set to 100%*/
+.mainImage{
+	width: 100%;
+}
+/*With of page into is set to full margin is decreased and padding from top is only 10px*/
+.pageIntro{
+	margin: 4px 4px 4px 4px;
+	width: 100%;
+	height: auto;
+	padding: 1%;
+	padding-top:10px;
+	margin: 0 auto;
+}
+
+.pageIntro p{
+	padding-top: 50px;
+	padding-right: 30px;
+	padding-left:30px;
+
+}
+/*Image has width of 100%*/
+.myimage{
+	width: 100%;
+
+}
+.myimage img{
+	width: 100%;
+}
+/*Direction of flex is set to column*/
+.column{
+	display: flex;
+	flex-direction: column;
+
+}
+/*Width of class leftColumn is set to 100%*/
+.leftColumn{
+	float: left;
+	width: 100%;
+}
+/*Margin of row is decreased*/
+#Row{
+	margin: 5px 50px 5px 5px;
+	height: auto;
+	width: auto;
+}
+/*Mobile responsiveness for class question*/
+.question{
+	padding-left: 10px;
+	min-width: 120px;
+	height: 20px;
+}
+/*Mobile responsiveness for class answer*/
+.answer{
+	padding-left: 5px;
+	margin-left: 5px;
+	height: 20px;
+	min-width: 130px;
+}
+/*For the right columne of the page width is almost full*/
+.rightColumn{
+	width: 98%;
+	height: auto;
+}
+/*For the contactBar class the flex direction is set to column*/
+.contactBar{
+	align-content: center;
+	width:auto;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+/*the contactItem class has its width of 100%*/
+.contactItem{
+	width: 100%
+	padding: 10px 10px 10px 10px;
+}
+/*for the link in contant Item font size*/
+.contactItem a i{
+	font-size: 150%;
+
+}
+/*When font awesome link in contactItem class is hovered.*/
+.contactItem a i:hover{
+	font-size: 200%;
+	}
+	/*For the second element in footer.*/
+.second{
+	font-size: 150%;
+	padding-left: 10px;
+	margin: 0 auto;
+	width: auto;
+}
