@@ -9,7 +9,7 @@ body{
 p{/*Styling element for paragraph.*/
 	font-family: sans-serif;/*Sets the font family*/
 	font-size: 120%;
-	line-height: 120%
+	line-height: 120%;
 	padding:3%;
 	text-align: justify;/*The text is justified of paragraph.*/
 }
@@ -66,7 +66,7 @@ header{
 	
 /*Styling for the navigation bar*/
 nav{
-	width:100%
+	width:100%;
 	height: auto;
 	display: flex;
 	flex-direction: row;/*Set the direction of the items in nav to row.*/
@@ -74,7 +74,6 @@ nav{
 }
 /*navigation items of the navigation bar*/
 .menuitem{
-	width: 0 auto;
 	height: auto;
 	padding-left: 45px;
 	padding-top: 50px;
@@ -166,7 +165,6 @@ section{
 /*For the div column*/
 .column{
 	margin:10px 10px 10px 10px;/*Gives the margin of the page*/ 
-	width: 0 auto;
 	height: auto;
 	display: flex;
 	flex-direction: row;/*sets the flex to direction of row.*/
@@ -180,8 +178,8 @@ section{
 	width: 49%;/*Sets the width to 49%*/
 	height: auto;
 }
-/*Styling for the id row*/
-#Row{
+/*Styling for the class row*/
+.Row{
 	/*for the margin of the column*/
 	margin: 10px 10px 10px 120px;
 	height: 20px;
@@ -392,7 +390,7 @@ section{
 }
 /*the contactItem class has its width of 100%*/
 .contactItem{
-	width: 100%
+	width: 100%;
 	padding: 10px 10px 10px 10px;
 }
 /*for the link in contant Item font size*/
@@ -410,4 +408,5 @@ section{
 	padding-left: 10px;
 	margin: 0 auto;
 	width: auto;
+}
 }
